@@ -1,0 +1,49 @@
+User:
+input basic data of building(totalFloor)
+input basic data of lift(totalLift, capacity, time_PsgInOut, time_OpenClose, time_FloorToFloor)
+input simulation data(simTime)
+input special events(type, startTime, endTime,fromFloor/toFloor,demandPsg)
+
+
+
+show form(building,lift, sim data, traffic pattern)
+
+show programming is running
+
+show result
+
+read user input
+
+random totalLift
+
+random demand psg number
+
+random desFloor
+
+random arrFloor
+
+random arrTime 
+
+random traffic pattern based on events
+
+sort psgQ into upQ and downQ by their direction
+
+calculate avgTime
+
+calculate avgLength
+
+calculate percentBusy
+
+simulate time (start from 0, stop when the simulation reaches the goal)
+
+control lift move up
+
+control lift move down
+
+control lift open door
+
+control lift close door
+
+
+
+
