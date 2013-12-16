@@ -1,0 +1,99 @@
+User:
+F1.1 Basic Depend on F2.1
+Input basic data of building(totalFloor, totalLift)
+System must allow user to input the total floors number and the range of total lift number
+
+F1.2 Basic Depend on F2.1
+Input basic data of lift(capacity, time_PsgInOut, time_OpenClose, time_FloorToFloor)
+System must allow user to input the details of lift. What is the capacity, how long does the passenger need to enter the lift from outside lift, how long does the lift door open from close, how long does the lift door close from open and how long does the lift move from one floor to neighbor floor.
+
+F1.3 Basic Depend on F2.1
+Input simulation data (simTime)
+	System must allow user to input how long the simulation needs to simulate.
+
+F1.4 Basic Depend on F2.1
+Input special events(type, startTime, endTime,fromFloor/toFloor,demandPsg)
+	System must allow user to input some traffic pattern. What type does the traffic happen(weekend or weekday), when does the traffic start, when does the traffic end, what is the traffic floor and the demand number of passenger. 
+
+Display
+F2.1 Basic 
+Show form(building,lift, sim data, traffic pattern)
+System must display a form which the user need to input
+
+F2.2 High
+Show programming is running
+	System should display some information while the program is running.
+
+F2.3 Basic Depend on F3.9 F3.10 F3.11
+Show result
+	System must display the simulation result.
+
+System
+F3.1 Basic
+Read user input
+	System must able to read all the user input.
+
+F3.2 Basic Depend on F3.1 F1.1
+Random totalLift
+	System must able to random the total number of lifts.
+
+
+F3.3 Basic Depend on F3.1
+Random demand psg number
+	System must able to random the demand passenger number.
+
+F3.4 Basic Depend on F1.1 F3.3
+Random desFloor
+	System must able to random destination floor for each passenger.
+
+F3.5 Basic Depend on F1.1 F3.4 
+Random arrFloor
+	System must able to random arrival floor for each passenger.
+
+F3.6 Basic
+Random arrTime 
+	System must able to random arrival time for each passenger.
+
+F3.7 Basic Depend on F1.4 F3.3 F3.4 F3.5 F3.6
+Random traffic pattern based on events
+	System must random traffic based on the event lists.
+
+F3.8 High Depend on F3.4 F3.5
+Sort psgQ into upQ and downQ by their direction
+	System should sort the passenger list by their direction.
+
+F3.9 Basic
+Calculate avgTime
+	System must able to calculate the average time.
+
+F3.10 Basic
+Calculate avgLength
+	System must able to calculate the average waiting length for each floor
+
+F3.11 Basic
+Calculate percentBusy
+	System must able to calculate the percentage of busy for each lift.
+
+F3.12 Basic Depend on F1.3
+Simulate time (start from 0, stop when the simulation reaches the goal)
+	System must have a simulation time, keep running till the time reached the goal.
+ 
+Control
+F4.1
+Control lift move up
+	System must have a controller to control lift moves up.
+
+F4.2
+Control lift move down
+	System must have a controller to control lift moves down.
+
+F4.3
+Control lift open door
+	System must have a controller to control lift door open.
+
+F4.4
+Control lift close door
+	System must have a controller to control lift door close.
+
+
+
